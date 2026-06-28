@@ -1,0 +1,56 @@
+.filters-section { margin-bottom: 2rem; }
+.filters-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1rem;
+}
+.clear-filters-btn {
+  background: rgba(239,71,111,0.1);
+  border: 1px solid rgba(239,71,111,0.25);
+  color: #ef476f;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+.clear-filters-btn:hover {
+  background: rgba(239,71,111,0.2);
+  border-color: rgba(239,71,111,0.4);
+}
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+.filter-group {
+  display: flex; flex-direction: column; gap: 0.35rem;
+}
+.filter-group label {
+  font-size: 0.8rem; color: rgba(255,255,255,0.45);
+  font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.filter-group input,
+.filter-group select {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: rgba(168,139,250,0.5);
+}
+.filter-group select option {
+  background: #16162a; color: #fff;
+}

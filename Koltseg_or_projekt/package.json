@@ -1,0 +1,27 @@
+{
+  "name": "budget-pro",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"node server/index.cjs\" \"vite\"",
+    "dev:frontend": "vite",
+    "dev:backend": "node server/index.cjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-is": "^19.2.6",
+    "recharts": "^3.8.1"
+  }
+}
